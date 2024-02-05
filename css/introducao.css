@@ -1,0 +1,30 @@
+/*  <section class="titulo">
+            <h3 class="titulo-desenvolvedor">Desenvolvedor Full Stack</h3>
+            <p class="titulo-localizacao">Localizado em Curitiba ☂️</p>
+        </section> */
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza os itens filhos horizontalmente */
+    text-align: center;
+    /* Centraliza o texto dos itens filhos */
+}
+
+.titulo-desenvolvedor {
+    max-width: 600px;
+    /* Ajuste a largura máxima conforme necessário */
+    width: 100%;
+    margin: 0 auto;
+    /* Isso centraliza o h3 dentro da seção .titulo */
+}
+
+.titulo-localizacao {
+    max-width: 600px;
+    /* Deve ser o mesmo que o .titulo-desenvolvedor para alinhamento */
+    width: 100%;
+    align-self: flex-start;
+    /* Alinha este elemento à esquerda dentro do espaço definido */
+    margin: 0;
+    /* Remove qualquer margem que possa afetar o alinhamento */
+}
