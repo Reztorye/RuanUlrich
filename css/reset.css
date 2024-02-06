@@ -144,3 +144,15 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.subtitulo {
+    font-size: 8rem;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 4ch;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
