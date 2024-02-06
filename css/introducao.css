@@ -1,30 +1,67 @@
-/*  <section class="titulo">
-            <h3 class="titulo-desenvolvedor">Desenvolvedor Full Stack</h3>
-            <p class="titulo-localizacao">Localizado em Curitiba ☂️</p>
-        </section> */
-.titulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Centraliza os itens filhos horizontalmente */
-    text-align: center;
-    /* Centraliza o texto dos itens filhos */
-}
-
-.titulo-desenvolvedor {
-    max-width: 600px;
-    /* Ajuste a largura máxima conforme necessário */
-    width: 100%;
+.introducao {
+    max-width: 1920px;
+    padding: 40px 20px;
     margin: 0 auto;
-    /* Isso centraliza o h3 dentro da seção .titulo */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
 }
 
-.titulo-localizacao {
-    max-width: 600px;
-    /* Deve ser o mesmo que o .titulo-desenvolvedor para alinhamento */
-    width: 100%;
-    align-self: flex-start;
-    /* Alinha este elemento à esquerda dentro do espaço definido */
-    margin: 0;
-    /* Remove qualquer margem que possa afetar o alinhamento */
+.introducao h1 {
+    font-size: 4.5rem;
+    list-style: 1.125;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.introducao h1::before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url('/img/detalhe.svg') no-repeat center;
+    position: absolute;
+    top: -15px;
+    left: -40px;
+    z-index: -1;
+}
+
+.intrudoca p {
+    font-size: 1.5rem;
+    color: #525252;
+}
+
+@media (max-width: 1000px) {
+    .introducao h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .introducao {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .intrudocao h1 {
+        font-size: 2rem;
+    }
+
+    .introducao h1::before {
+        width: 30px;
+        height: 10px;
+        left: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .introducao {
+        grid-template-columns: 1fr;
+    }
+
+    .introducao img {
+        display: none;
+    }
 }
