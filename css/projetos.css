@@ -16,6 +16,7 @@
     color: #e0e0e0;
     text-transform: uppercase;
     font-weight: bold;
+    max-width: 5ch;
 }
 
 .projetos-descricao {
