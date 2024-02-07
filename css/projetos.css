@@ -14,6 +14,8 @@
 
 .projetos .subtitulo {
     color: #e0e0e0;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .projetos-descricao {
@@ -81,4 +83,32 @@
     border-radius: 4px;
     background: #ffffff;
     padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+    .projetos {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .projetos .subtitulo {
+        color: #141414;
+    }
+
+    .projetos-descricao {
+        font-size: 1.25rem;
+    }
+
+    .projeto-ano {
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+    }
+}
+
+@media (max-width: 400px) {
+    .projetos {
+        grid-template-columns: 1fr;
+    }
 }

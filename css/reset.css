@@ -153,6 +153,14 @@ img {
     max-width: 4ch;
 }
 
+@media (max-width: 800px) {
+    .subtitulo {
+        font-size: 3rem;
+        text-transform: capitalize;
+        max-width: initial;
+    }
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
