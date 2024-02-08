@@ -7,18 +7,6 @@ Este repositório contém o código-fonte do meu portfólio pessoal. O portfóli
 - HTML
 - CSS
 
-## Estrutura do Projeto
-
-SITE-PORTFOLIO/
-│ index.html # Página inicial do portfólio
-│ README.md # Este arquivo
-├── css/ # Folhas de estilo CSS
-│ ├── reset.css # Reset CSS para normalizar os estilos padrão do navegador
-│ ├── style.css # Estilos principais do portfólio
-│ └── ... # Outras folhas de estilo
-└── img/ # Pasta para imagens
-└── RuanFoto.png # Foto utilizada no portfólio
-
 ## Contato
 
 - Email: [ruanulrich.dev@gmail.com](mailto:ruanulrich.dev@gmail.com)
